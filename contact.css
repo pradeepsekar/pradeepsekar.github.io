@@ -1,0 +1,194 @@
+/*
+ * SimpleModal Contact Form
+ * http://www.ericmmartin.com/projects/simplemodal/
+ * http://code.google.com/p/simplemodal/
+ *
+ * Copyright (c) 2010 Eric Martin - http://ericmmartin.com
+ *
+ * Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *
+ * Revision: $Id: contact.css 242 2010-03-14 00:55:02Z emartin24 $
+ *
+ */
+
+/* Overlay */
+#contact-overlay {
+    cursor: wait;
+
+    background-color: #000;
+}
+
+/* Container */
+#contact-container {
+    width: 600px;
+
+    font: 16px/22px Helvetica, Arial, sans-serif;
+
+    text-align: left;
+}
+#contact-container .contact-content {
+    height: 40px;
+
+    color: #fff;
+}
+#contact-container h1 {
+    padding: 0 0 6px 12px;
+    margin: 0 0 12px 0;
+
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+
+    text-align: center;
+
+    color: #f89d57;
+}
+#contact-container .contact-loading {
+    position: absolute;
+    z-index: 8000;
+
+    width: 54px;
+    height: 55px;
+    padding: 0;
+    margin: -14px 0 0 300px;
+
+    background: url(images/loading.gif) no-repeat;
+}
+#contact-container .contact-message {
+    text-align: center;
+}
+#contact-container .contact-error {
+    width: 92%;
+    padding: 2px;
+    margin: 0 auto;
+
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+
+    border: 2px solid #ccc;
+    background: #000;
+}
+#contact-container br {
+    clear: both;
+}
+#contact-container form {
+    padding: 0;
+    margin: 0;
+}
+#contact-container label {
+    display: block;
+    float: left;
+    width: 260px;
+    padding-right: 4px;
+    clear: left;
+
+    font-weight: bold;
+
+    text-align: right;
+}
+#contact-container .contact-input {
+    float: left;
+    width: 300px;
+    padding: 2px;
+    margin: 2px;
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+
+    border: 1px solid #fff;
+    background: #eee;
+}
+#contact-container .contact-box {
+    float: left;
+    width: 300px;
+    padding: 2px;
+    margin: 2px;
+
+    font-family: "Trebuchet MS", Verdana, Arial;
+}
+#contact-container textarea {
+    height: 114px;
+}
+#contact-container .contact-cc {
+    font-size: 14px;
+
+    cursor: default;
+    vertical-align: top;
+}
+#contact-container .contact-top {
+    height: 13px;
+    padding: 0;
+    margin: 0;
+}
+#contact-container .contact-bottom {
+    height: 13px;
+
+    font-size: 12px;
+    line-height: 12px;
+
+    text-align: center;
+
+    border-radius: 0 0 8px 8px;
+    -moz-border-radius-bottomleft: 8px;;
+}
+#contact-container .contact-bottom a,
+#contact-container .contact-bottom a:link,
+#contact-container .contact-bottom a:active,
+#contact-container .contact-bottom a:visited {
+    position: relative;
+    top: -4px;
+
+    text-decoration: none;
+
+    color: #666;
+}
+#contact-container .contact-bottom a:hover {
+    color: #888;
+}
+#contact-container .contact-button {
+    height: 26px;
+    margin: 4px 0 0 4px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+
+    color: #fff;
+    border: 0;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+    background: #f89d57;
+}
+#contact-container .contact-button:hover {
+    background: #ce7941;
+}
+#contact-container a.modal-close,
+#contact-container a.modal-close:link,
+#contact-container a.modal-close:active,
+#contact-container a.modal-close:visited {
+    position: absolute;
+    top: 0;
+    right: 8px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    color: #999;
+}
+#contact-container a.modal-close:hover {
+    color: #ccc;
+}
+#simplemodal-data {
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    background-color: #f6e3ce;
+}

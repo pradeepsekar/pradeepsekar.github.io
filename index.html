@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0023)http://karlandgina.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Keerthana &amp; Pradeep are getting married! | Dec 6 2015</title>
+<link rel="stylesheet" type="text/css" media="all" href="./style.css">
+<script type="text/javascript" src="./jquery.min.js"></script>
+<script type="text/javascript" src="./jquery.easing.1.3.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+
+<!-- Contact Form CSS files -->
+<link type='text/css' href='./basic.css' rel='stylesheet' media='screen' />
+        <script type="text/javascript">
+            $(function() {
+                $('div.nav a').bind('click',function(event){
+                    var $anchor = $(this);
+                    
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 3000,'easeInOutQuad');
+                    /*
+                    if you don't want to use the easing effects:
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1000);
+                    */
+                    event.preventDefault();
+                });
+				
+				$('div#lunaplane a').bind('click',function(event){
+                    var $anchor = $(this);
+                    
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 3000,'easeInOutQuad');
+                    /*
+                    if you don't want to use the easing effects:
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1000);
+                    */
+                    event.preventDefault();
+                });
+				
+            });
+        </script>
+        <script type="text/javascript" src="./jquery.spritely-0.1.js"></script>
+        <script type="text/javascript">
+		(function($) {
+			$(document).ready(function() {
+			
+				
+				
+				$('#clouds').pan({fps: 30, speed: 0.5, dir: 'right'});
+				
+				$('#lunaplane').sprite({fps: 15, no_of_frames: 3})
+					/*.spRandom({
+						top: 443,
+						left: 538,
+						right: 588,
+						bottom: 480,
+						speed: 2000,
+						pause: 2000
+					});*/
+				
+				$('#kg').sprite({fps: 8, no_of_frames: 1})
+					.spRandom({
+						top: 20,
+						left: 50,
+						right: 90,
+						bottom: 80,
+						speed: 3500,
+						pause: 1000
+					});
+				
+			
+			});
+		})(jQuery);
+	</script>
+    <link type="text/css" href="./contact.css" rel="stylesheet" media="screen">
+    <script type="text/javascript" src="./jquery.lightbox-0.5.pack.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('#hsresort a').lightBox();
+    });
+    </script>
+</head>
+
+<body>
+<div id="container">
+	<div id="section1">
+    
+		<div id="kg" style="top: 49.5697125714286px; left: 79.1229392653061px; background-position: 0px 0px;"></div>  
+        <div id="lunaplane" style="background-position: 0px 0px;">
+   
+            <a id="btn-travel" onclick ="openMap()">Travel</a>
+        </div>     
+        <img id="datelocation" src="./images/datelocation.png" alt="June 5 2011, Cherry Valley CA">
+        
+    </div><!--End section1-->
+    
+    
+</div><!--End container-->
+<div id="clouds" style="background-position: 3301px 0px;"></div>
+<script type="text/javascript" src="./jquery.simplemodal.js"></script>
+<script type="text/javascript" src="./contact.js"></script>
+
+<div id='mapcontent' style='display:none'>
+       <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="580" height="355" src="https://maps.google.com/maps?hl=en&q=sithambaram mahal, trichy&ie=UTF8&t=roadmap&z=10&iwloc=B&output=embed"></iframe>
+    </div>
+
+    <script>
+
+    function openMap()
+    {
+        $( "#mapcontent" ).modal();
+    }
+    
+    </script>
+</body></html>
