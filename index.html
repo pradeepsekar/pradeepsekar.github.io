@@ -27,44 +27,14 @@
                     }, 1000);
                     */
                     event.preventDefault();
-                });
-				
-				$('div#lunaplane a').bind('click',function(event){
-                    var $anchor = $(this);
-                    
-                    $('html, body').stop().animate({
-                        scrollTop: $($anchor.attr('href')).offset().top
-                    }, 3000,'easeInOutQuad');
-                    /*
-                    if you don't want to use the easing effects:
-                    $('html, body').stop().animate({
-                        scrollTop: $($anchor.attr('href')).offset().top
-                    }, 1000);
-                    */
-                    event.preventDefault();
-                });
-				
+                });				
             });
         </script>
         <script type="text/javascript" src="./jquery.spritely-0.1.js"></script>
         <script type="text/javascript">
 		(function($) {
-			$(document).ready(function() {
-			
-				
-				
-				$('#clouds').pan({fps: 30, speed: 0.5, dir: 'right'});
-				
-				$('#lunaplane').sprite({fps: 15, no_of_frames: 3})
-					/*.spRandom({
-						top: 443,
-						left: 538,
-						right: 588,
-						bottom: 480,
-						speed: 2000,
-						pause: 2000
-					});*/
-				
+			$(document).ready(function() {	
+				$('#clouds').pan({fps: 30, speed: 0.5, dir: 'right'});		
 				$('#kg').sprite({fps: 8, no_of_frames: 1})
 					.spRandom({
 						top: 20,
@@ -74,8 +44,6 @@
 						speed: 3500,
 						pause: 1000
 					});
-				
-			
 			});
 		})(jQuery);
 	</script>
@@ -91,17 +59,10 @@
 <body>
 <div id="container">
 	<div id="section1">
-    
-		<div id="kg" style="top: 49.5697125714286px; left: 79.1229392653061px; background-position: 0px 0px;"></div>  
-        <div id="lunaplane" style="background-position: 0px 0px;">
-   
-            <a id="btn-travel" onclick ="openMap()">Travel</a>
-        </div>     
+		<div id="kg" style="top: 49.5697125714286px; left: 79.1229392653061px; background-position: 0px 0px;"></div>    
         <img id="datelocation" src="./images/datelocation.png" alt="June 5 2011, Cherry Valley CA">
-        
-    </div><!--End section1-->
-    
-    
+        <img id="joinus" src="./images/lunaplane.png" alt="Join Us" onclick="openMap()">
+    </div><!--End section1-->   
 </div><!--End container-->
 <div id="clouds" style="background-position: 3301px 0px;"></div>
 <script type="text/javascript" src="./jquery.simplemodal.js"></script>
