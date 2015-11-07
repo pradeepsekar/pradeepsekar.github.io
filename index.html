@@ -66,6 +66,7 @@
         <img id="datelocation" src="./images/datelocation.png" alt="Dec 6, Trichy">
         <img id="joinus" src="./images/lunaplane.png" alt="Join Us" onclick="openMap()">
 		<img id="movie" src="./images/movies.png" alt="Video" onclick="openVideo()">
+        <img id="address_book" src="./images/address_book.png" alt="guest book" onclick="openMsg()">
     </div><!--End section1--> 
 </div><!--End container-->
 <div id="clouds"></div>
@@ -100,7 +101,11 @@
     </script>
    
 <div id='guestbooks' style="display:none;"> 
-   <script type="text/javascript" src="https://pub29.bravenet.com/emailfwd/bnet.forms.js.php?formid=3724&usernum=2441136219"></script>
+  <form action="//formspree.io/pradeepsek@gmail.com" method="POST">
+    <input type="text" name="name">
+    <input type="email" name="_replyto">
+    <input type="submit" value="Send">
+</form>
 </div>
 
 </body></html>
