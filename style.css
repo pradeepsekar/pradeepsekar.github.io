@@ -125,17 +125,18 @@ body {
     position: relative;
     z-index: 2;
 
-    width: 1000px;
+    width: 98%;
     margin: 0 auto;
     overflow: visible;
 }
+
 /*Sections
 ----------------------------*/
 #section1 {
     position: relative;
 
     width: 100%;
-    height: 1650px;
+    height: 1250px;
 }
 
 
@@ -161,6 +162,7 @@ body {
 
     background: url(images/lunaplane.png) 0 0 no-repeat;
 }
+
 #datelocation {
     position: absolute;
     top: 10px;
@@ -171,6 +173,18 @@ body {
     position: absolute;
     top: 15px;
     right: 10px;
+    z-index: 1;
+}
+#movie {
+    position: absolute;
+    top: 15px;
+    right: 240px;
+    z-index: 1;
+}
+#address_book{
+     position: absolute;
+    top: 15px;
+    right: 370px;
     z-index: 1;
 }
 #btn-rsvp {
