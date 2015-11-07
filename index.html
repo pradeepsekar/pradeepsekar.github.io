@@ -98,11 +98,22 @@
     {
         $( "#guestbooks" ).modal();
     }
+
+    function submitForm()
+    {
+        $.ajax({
+    url: "//formspree.io/pradeepsek@gmail.com", 
+    method: "POST",
+    data: {message: $('#message').val(),
+           name : $('#name').val(),
+           _replyto: $('#email').val()},
+    dataType: "json"
+});
+    }
     </script>
    
 <div id='guestbooks' style="display:none;"> 
 <div style="background-color:#"> 
-  <form action="//formspree.io/pradeepsek@gmail.com" method="POST">
   <label style="color: #fff; font-size: 42px; border: 5px; padding-left: 100px; padding-bottom: 10px;">Send your message!</label><br>
   <label for="name">Name:</label>
       <input type="text" name="name" id="name" placeholder="Jane Smith" class="formEle"> <br>
@@ -113,10 +124,7 @@
       style="padding-left:25px;font-family: arial 12px;"> </textarea> <br>
  
       <!-- Allow form submission with keyboard without duplicating the dialog button -->
-      <span style="padding-left:250px"> <input type="submit" value="Send" class="formEle"> </span>
-
-   
-</form>
+      <span style="padding-left:250px"> <input type="submit" value="Send" class="formEle" onclick="submitForm()"> </span>
 </div>
 </div>
 
