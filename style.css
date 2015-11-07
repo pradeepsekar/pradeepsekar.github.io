@@ -139,7 +139,10 @@ body {
     height: 1650px;
 }
 
-
+.formEle{
+    border-spacing: 15px;
+    margin: 10px;
+}
 /* Images
 ------------------------------*/
 #kg {
@@ -186,6 +189,9 @@ body {
     top: 15px;
     right: 370px;
     z-index: 1;
+}
+#guestbooks{
+    font-family: 'Satisfy', cursive;
 }
 #btn-rsvp {
     position: absolute;

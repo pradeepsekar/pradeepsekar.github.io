@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 <link href='https://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-
+<link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
 <!-- Contact Form CSS files -->
 <link type='text/css' href='./basic.css' rel='stylesheet' media='screen' />
         <script type="text/javascript">
@@ -101,11 +101,23 @@
     </script>
    
 <div id='guestbooks' style="display:none;"> 
+<div style="background-color:#"> 
   <form action="//formspree.io/pradeepsek@gmail.com" method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
+  <label style="color: #fff; font-size: 42px; border: 5px; padding-left: 100px; padding-bottom: 10px;">Send your message!</label><br>
+  <label for="name">Name:</label>
+      <input type="text" name="name" id="name" placeholder="Jane Smith" class="formEle"> <br>
+      <label for="email">Email:</label>
+      <input type="text" name="_replyto" id="email" placeholder="jane@smith.com" class="formEle"> <br>
+      <label for="message">Message:</label> <br>
+      <textarea id="message" name="message" cols="75" rows="10" placeholder="Enter your message" class="formEle" 
+      style="padding-left:25px;font-family: arial 12px;"> </textarea> <br>
+ 
+      <!-- Allow form submission with keyboard without duplicating the dialog button -->
+      <span style="padding-left:250px"> <input type="submit" value="Send" class="formEle"> </span>
+
+   
 </form>
+</div>
 </div>
 
 </body></html>
