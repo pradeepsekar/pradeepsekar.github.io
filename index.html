@@ -100,32 +100,26 @@
     }
 
     function submitForm()
-    {
-        $.ajax({
-    url: "//formspree.io/pradeepsek@gmail.com", 
-    method: "POST",
-    data: {message: $('#message').val(),
-           name : $('#name').val(),
-           _replyto: $('#email').val()},
-    dataType: "json"
-});
-    }
+   
     </script>
    
 <div id='guestbooks' style="display:none;"> 
-<div style="background-color:#"> 
+<form action="//formspree.io/pradeepsek@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="New greetings!" />
+<input type="text" name="_gotcha" style="display:none" />
+<input type="hidden" name="_next" value="//pradeepsekar.github.io" />
   <label style="color: #fff; font-size: 42px; border: 5px; padding-left: 100px; padding-bottom: 10px;">Send your message!</label><br>
   <label for="name">Name:</label>
       <input type="text" name="name" id="name" placeholder="Jane Smith" class="formEle"> <br>
       <label for="email">Email:</label>
       <input type="text" name="_replyto" id="email" placeholder="jane@smith.com" class="formEle"> <br>
       <label for="message">Message:</label> <br>
-      <textarea id="message" name="message" cols="75" rows="10" placeholder="Enter your message" class="formEle" 
+      <textarea id="message" name="message" cols="70" rows="10" placeholder="Enter your message" class="formEle" 
       style="padding-left:25px;font-family: arial 12px;"> </textarea> <br>
  
       <!-- Allow form submission with keyboard without duplicating the dialog button -->
-      <span style="padding-left:250px"> <input type="submit" value="Send" class="formEle" onclick="submitForm()"> </span>
-</div>
+      <span style="padding-left:250px"> <input type="submit" value="Send" class="formEle"> </span>
+</form>
 </div>
 
 </body></html>
